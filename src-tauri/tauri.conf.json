@@ -15,15 +15,28 @@
       "shell": {
         "all": false,
         "open": true
+      },
+      "window": {
+        "all": false,
+        "close": true,
+        "hide": true,
+        "show": true,
+        "maximize": true,
+        "minimize": true,
+        "unmaximize": true,
+        "unminimize": true,
+        "startDragging": true
       }
     },
     "windows": [
       {
         "fullscreen": false,
         "resizable": true,
+        "center": true,
         "title": "nemahaizai",
         "width": 1280,
-        "height": 720
+        "height": 720,
+        "decorations": false
       }
     ],
     "security": {

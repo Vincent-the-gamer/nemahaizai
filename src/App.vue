@@ -3,5 +3,7 @@
 </script>
 
 <template>
-    <h1 color-red>Welcome to Tauri!</h1>
+    <div m-t-30px>
+        <h1 color-red>Welcome to Tauri!</h1>
+    </div>
 </template>

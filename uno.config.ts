@@ -33,5 +33,8 @@ export default defineConfig({
             ([_, offsetX, offsetY, blur, color]) => ({ "box-shadow": `${offsetX}px ${offsetY}px ${blur}px ${color}` })
         ]
     ],
-    shortcuts: []
+    shortcuts: [
+        { "titlebar": "h-30px bg-#00dc82 select-none flex justify-end fixed top-0 left-0 right-0 z-10" },
+        { "titlebar-button": "inline-flex justify-center items-center w-30px h-30px hover:bg-#59ffba hover:cursor-pointer" }
+    ]
 })

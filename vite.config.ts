@@ -4,6 +4,8 @@ import vue from "@vitejs/plugin-vue"
 import UnoCSS from "unocss/vite"
 import AutoImport from "unplugin-auto-import/vite"
 import Components from "unplugin-vue-components/vite"
+import VueRouter from 'unplugin-vue-router/vite'
+import { VueRouterAutoImports } from 'unplugin-vue-router'
 
 export default defineConfig(async () => ({
   plugins: [
@@ -11,7 +13,13 @@ export default defineConfig(async () => ({
     UnoCSS(),
     AutoImport({
       imports: [
-        "vue"
+        "vue",
+        "vue-router",
+        VueRouterAutoImports,
+        {
+          // add any other imports you were relying on
+          'vue-router/auto': ['useLink'],
+        },
       ],
       dts: true,
       vueTemplate: true
@@ -19,7 +27,8 @@ export default defineConfig(async () => ({
     Components({
       dts: true,
       include: [/\.vue$/, /\.vue\?vue/]
-    })
+    }),
+    VueRouter()
   ],
   optimizeDeps: {
     include: [

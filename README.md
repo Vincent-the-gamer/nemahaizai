@@ -12,3 +12,13 @@
 # Notice
 1. Under construction.
 2. This repo will be `merged back` to [Nemassler](https://github.com/Vincent-the-gamer/nemassler).
+
+# Build (Avoid forgetting...)
+
+## GitHub Actions
+Soon...
+
+## Manual Build
+```shell
+pnpm tauri build
+```

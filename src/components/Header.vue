@@ -3,7 +3,6 @@ import { appWindow } from '@tauri-apps/api/window'
 import Minimize from "~/assets/minimize.svg"
 import Maximize from "~/assets/maximize.svg"
 import Close from "~/assets/close.svg"
-import Logo from "~/assets/logo.png"
 
 onMounted(() => {
     document
@@ -20,7 +19,7 @@ onMounted(() => {
 
 <template>
     <div data-tauri-drag-region titlebar>
-        <img :src="Logo" alt="logo" absolute left-0 h-7.5 />
+        <h3 w-fit m="0 auto" translate-x-12 color-black>Nemahaizai</h3>
         <div titlebar-button id="titlebar-minimize">
             <img :src="Minimize" alt="minimize" />
         </div>

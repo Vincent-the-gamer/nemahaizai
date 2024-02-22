@@ -17,7 +17,8 @@ export default defineConfig(async () => ({
       vueTemplate: true
     }),
     Components({
-      dts: true
+      dts: true,
+      include: [/\.vue$/, /\.vue\?vue/]
     })
   ],
   optimizeDeps: {

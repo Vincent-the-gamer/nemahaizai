@@ -35,6 +35,7 @@ export default defineConfig({
     ],
     shortcuts: [
         { "titlebar": "h-30px bg-#00dc82 select-none flex justify-end fixed top-0 left-0 right-0 z-10" },
-        { "titlebar-button": "inline-flex justify-center items-center w-30px h-30px hover:bg-#59ffba hover:cursor-pointer" }
+        { "titlebar-button": "inline-flex justify-center items-center w-30px h-30px hover:bg-#59ffba hover:cursor-pointer" },
+        { "icon": "font-size-8 color-black hover:color-white cursor-pointer" }
     ]
 })

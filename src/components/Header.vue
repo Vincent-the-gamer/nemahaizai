@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { appWindow } from '@tauri-apps/api/window'
-import Minimize from "~/assets/minimize.svg"
-import Maximize from "~/assets/maximize.svg"
-import Close from "~/assets/close.svg"
+import Minimize from "~/assets/images/minimize.svg"
+import Maximize from "~/assets/images/maximize.svg"
+import Close from "~/assets/images/close.svg"
 
 onMounted(() => {
     document

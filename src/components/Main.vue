@@ -4,6 +4,10 @@ const router = useRouter()
 function toRoute(route: string) {
     router.push(route)
 }
+
+function activeStyle(route: string) {
+    return route === router.currentRoute.value.fullPath ? "color-deeppink" : ""
+}
 </script>
 
 <template>
@@ -11,13 +15,24 @@ function toRoute(route: string) {
         <div absolute left-0 top-7 w-13 h-full class="bg-#00dc82" >
             <div flex="~ flex-col justify-center">
                 <p absolute @click="() => toRoute('/')">
-                    <div i-heroicons-musical-note-solid icon title="Audio Converter"/>
+                    <div i-heroicons-musical-note-solid icon 
+                         title="Audio Converter"
+                         :class="activeStyle('/')"
+                    />
                 </p>
                 <p absolute top-12 @click="() => toRoute('/bpmDetect')">
-                    <div i-heroicons-rectangle-stack-20-solid icon title="BPM Detect"/>
+                    <div i-heroicons-rectangle-stack-20-solid 
+                       icon 
+                         title="BPM Detect"
+                         :class="activeStyle('/bpmDetect')"
+                    />
                 </p>
                 <p absolute bottom-4 @click="() => toRoute('/options')">
-                    <div i-material-symbols-light-settings-outline icon title="Options"/>
+                    <div i-material-symbols-light-settings-outline 
+                       icon 
+                         title="Options"
+                         :class="activeStyle('/options')"
+                    />
                 </p>
             </div>
         </div>

@@ -14,7 +14,6 @@ export default defineConfig(async () => ({
     AutoImport({
       imports: [
         "vue",
-        "vue-router",
         VueRouterAutoImports,
         {
           // add any other imports you were relying on

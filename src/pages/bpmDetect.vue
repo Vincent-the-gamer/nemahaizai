@@ -3,5 +3,5 @@
 </script>
 
 <template>
-    <h1>BPM Detect</h1>
+    <h1 page-title>BPM Detect</h1>
 </template>

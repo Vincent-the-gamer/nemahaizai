@@ -12,22 +12,22 @@
   },
   "dependencies": {
     "@tauri-apps/api": "^1.5.3",
-    "vue": "^3.4.19",
+    "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "@iconify-json/heroicons": "^1.1.20",
     "@iconify-json/material-symbols-light": "^1.1.13",
     "@tauri-apps/cli": "^1.5.10",
-    "@types/node": "^20.11.19",
+    "@types/node": "^20.11.24",
     "@vitejs/plugin-vue": "^5.0.4",
     "taze": "^0.13.3",
     "typescript": "^5.3.3",
     "unocss": "^0.58.5",
     "unplugin-auto-import": "^0.17.5",
     "unplugin-vue-components": "^0.26.0",
-    "unplugin-vue-router": "^0.7.0",
+    "unplugin-vue-router": "^0.8.4",
     "vite": "^5.1.4",
-    "vue-tsc": "^1.8.27"
+    "vue-tsc": "^2.0.1"
   }
 }

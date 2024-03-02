@@ -5,5 +5,12 @@
     "present": "现在",
     "version": "版本",
     "license": "MIT 开源许可证",
-    "audio-converter": "音频转换工具"
+    "audio-converter": "音频转换工具",
+    "ncm2mp3": "ncm 转 mp3",
+    "description": "把「.ncm」文件放在ncm输入文件夹中,然后点击「转换!」按钮.",
+    "ncm-input-folder": "ncm输入文件夹",
+    "mp3-output-folder": "mp3输出文件夹",
+    "convert": "转换",
+    "log": "日志",
+    "nothing": "空空如也"
 }

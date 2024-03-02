@@ -5,5 +5,12 @@
     "present": "PRESENT",
     "version": "Version",
     "license": "MIT Licensed",
-    "audio-converter": "Audio Converter"
+    "audio-converter": "Audio Converter",
+    "ncm2mp3": "ncm to mp3",
+    "description": "put 「.ncm」 files into ncm folder, then click 「Convert!」 button.",
+    "ncm-input-folder": "ncm input folder",
+    "mp3-output-folder": "mp3 output folder",
+    "convert": "Convert",
+    "log": "Log",
+    "nothing": "Nothing."
 }

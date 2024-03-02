@@ -16,21 +16,21 @@ function activeStyle(route: string) {
             <div flex="~ flex-col justify-center">
                 <p absolute @click="() => toRoute('/')">
                     <div i-heroicons-musical-note-solid icon 
-                         title="Audio Converter"
+                         :title="$t('audio-converter')"
                          :class="activeStyle('/')"
                     />
                 </p>
                 <p absolute top-12 @click="() => toRoute('/bpmDetect')">
                     <div i-heroicons-rectangle-stack-20-solid 
                        icon 
-                         title="BPM Detect"
+                         :title="$t('bpm-detect')"
                          :class="activeStyle('/bpmDetect')"
                     />
                 </p>
                 <p absolute bottom-4 @click="() => toRoute('/options')">
                     <div i-material-symbols-light-settings-outline 
                        icon 
-                         title="Options"
+                         :title="$t('options')"
                          :class="activeStyle('/options')"
                     />
                 </p>

@@ -1,5 +1,9 @@
 {
     "bpm-detect": "BPM Detect",
     "options": "Options",
-    "language": "Language"
+    "language": "Language",
+    "present": "PRESENT",
+    "version": "Version",
+    "license": "MIT Licensed",
+    "audio-converter": "Audio Converter"
 }

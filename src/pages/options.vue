@@ -16,9 +16,9 @@ const { locale } = useI18n()
         </span>
     </p>
     <div absolute bottom-5>
-        <p w-fit m="0 auto" translate-x--15>
-            <p>2024-PRESENT Vincent-the-gamer | Version: {{ version }}</p>
-            <p w-fit m="0 auto">MIT Licensed</p>
+        <p w-fit m="0 auto" translate-x--12>
+            <p>2024-{{ $t("present") }} Vincent-the-gamer | {{ $t("version") }}: {{ version }}</p>
+            <p w-fit m="0 auto">{{ $t("license") }}</p>
         </p>
         
     </div>

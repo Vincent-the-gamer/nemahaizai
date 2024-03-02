@@ -1,5 +1,9 @@
 {
     "bpm-detect": "BPM 检测",
     "options": "设置",
-    "language": "语言"
+    "language": "语言",
+    "present": "现在",
+    "version": "版本",
+    "license": "MIT 开源许可证",
+    "audio-converter": "音频转换工具"
 }

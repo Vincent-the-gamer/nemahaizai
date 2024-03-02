@@ -3,5 +3,5 @@
 </script>
 
 <template>
-    <h1 page-title>Audio Converter</h1>
+    <h1 page-title>{{ $t("audio-converter") }}</h1>
 </template>

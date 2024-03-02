@@ -3,5 +3,5 @@
 </script>
 
 <template>
-    <h1 page-title>BPM Detect</h1>
+    <h1 page-title>{{ $t("bpm-detect") }}</h1>
 </template>

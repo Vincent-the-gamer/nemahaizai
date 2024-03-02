@@ -48,6 +48,6 @@ export default defineConfig({
         { "icon": "font-size-8 color-black hover:color-white cursor-pointer" },
         { "page-title": "w-fit m-t-6 m-auto" },
         { "input": "p-2 border-rd-5px m-2 w-50 h-fit font-size-4"},
-        { "select": "w-30 m-2 border-rd-5px font-size-4 bg-black color-white border-pink h-30px" }
+        { "select": "w-fit m-2 border-rd-5px font-size-4 bg-black color-white border-pink h-30px" }
     ]
 })

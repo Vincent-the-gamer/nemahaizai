@@ -4,7 +4,7 @@
 
 <template>
     <h1 page-title>{{ $t("audio-converter") }}</h1>
-    <div flex="~ col wrap justify-center items-center wrap">
+    <div flex="~ col wrap justify-center items-center">
         <h2 m-1>{{ $t("ncm2mp3") }}</h2>
         <h4 m-1>{{ $t("description") }}</h4>
         <p m-1>

@@ -15,11 +15,13 @@ onMounted(() => {
         .getElementById('titlebar-close')!
         .addEventListener('click', () => appWindow.close())
 })
+
+const { width, height } = useWindowSize()
 </script>
 
 <template>
     <div data-tauri-drag-region titlebar>
-        <h3 w-fit m="0 auto" translate-x-12 color-black>Nemahaizai</h3>
+        <h3 w-fit m="0 auto" translate-x-12 color-black>Nemahaizai - {{ width }} * {{ height }}</h3>
         <div titlebar-button id="titlebar-minimize">
             <img :src="Minimize" alt="minimize" />
         </div>

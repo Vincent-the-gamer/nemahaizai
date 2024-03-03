@@ -14,6 +14,7 @@ export default defineConfig(async () => ({
     AutoImport({
       imports: [
         "vue",
+        "@vueuse/core",
         "vue-i18n",
         VueRouterAutoImports,
         {

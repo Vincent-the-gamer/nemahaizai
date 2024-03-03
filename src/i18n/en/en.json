@@ -12,5 +12,15 @@
     "mp3-output-folder": "mp3 output folder",
     "convert": "Convert",
     "log": "Log",
-    "nothing": "Nothing."
+    "nothing": "Nothing.",
+    "select-audio": "Select audio",
+    "choose-audio-files": "Choose Audio File(s)",
+    "reset": "Reset",
+    "calculate-bpm": "Calculate BPM",
+    "selected-files": "Selected Files",
+    "results": "Results",
+    "you-have-selected": "You have selected",
+    "song-name": "Song Name",
+    "bpm": "BPM",
+    "file": "file(s)"
 }

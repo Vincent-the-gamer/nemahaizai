@@ -21,6 +21,10 @@ export default defineConfig(async () => ({
           // add any other imports you were relying on
           'vue-router/auto': ['useLink'],
         },
+        {
+          from: "@vincent-the-gamer/utils/client",
+          imports: ["detectBPM"]
+        }
       ],
       dts: true,
       vueTemplate: true

@@ -12,5 +12,15 @@
     "mp3-output-folder": "mp3输出文件夹",
     "convert": "转换",
     "log": "日志",
-    "nothing": "空空如也"
+    "nothing": "空空如也",
+    "select-audio": "选择音频文件",
+    "choose-audio-files": "选择音频",
+    "reset": "重置",
+    "calculate-bpm": "计算BPM",
+    "selected-files": "已选择的文件",
+    "results": "结果",
+    "you-have-selected": "你已选择",
+    "song-name": "歌曲名",
+    "bpm": "BPM",
+    "file": "个文件"
 }

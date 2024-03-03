@@ -20,6 +20,5 @@ const { locale } = useI18n()
             <p>2024-{{ $t("present") }} Vincent-the-gamer | {{ $t("version") }}: {{ version }}</p>
             <p w-fit m="0 auto">{{ $t("license") }}</p>
         </p>
-        
     </div>
 </template>

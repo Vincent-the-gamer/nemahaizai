@@ -49,6 +49,7 @@ export default defineConfig({
         { "page-title": "w-fit m-t-6 m-auto" },
         { "input": "p-2 border-rd-5px m-2 w-50 h-fit font-size-4"},
         { "select": "w-fit m-2 border-rd-5px font-size-4 bg-black color-white border-pink h-30px" },
-        { "button": 'h-9 font-size-4 px-4 py-1 rounded inline-block bg-teal-700 text-white cursor-pointer !outline-none hover:bg-teal-800 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'}
+        { "button": 'h-9 font-size-4 px-4 py-1 rounded inline-block bg-teal-700 text-white cursor-pointer !outline-none hover:bg-teal-800 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'},
+        { "tag": "bg-gray border-rd-4px m-inline-3px p-2 hover:bg-white hover:color-black cursor-pointer"}
     ]
 })

@@ -59,7 +59,7 @@ async function ncm2mp3(){
         <h4 m-1>{{ $t("description") }}</h4>
         <p m-1>
             <span>{{ $t("ncm-input-folder") }}:</span>
-            <input w-fit input type="text" v-model="paths.ncmInput"/>
+            <input input type="text" v-model="paths.ncmInput"/>
         </p>
         <p m-1>
             <span>{{ $t("mp3-output-folder") }}:</span>

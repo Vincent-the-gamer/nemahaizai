@@ -39,7 +39,14 @@ export default defineConfig({
             }
         ],
         [
-            "color-deeppink", { color: "deeppink"}
+            /^\b(color|bg)\b-([a-z_-]+)$/, 
+            ([_, type, value]) => {
+                if(type === "color") {
+                    return { "color": value }
+                } else {
+                    return { "background-color": value }
+                }
+            }
         ]
     ],
     shortcuts: [

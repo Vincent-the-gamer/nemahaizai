@@ -26,6 +26,9 @@ export default defineConfig(async () => ({
           imports: ["detectBPM"]
         }
       ],
+      dirs: [
+        "./src/utils"
+      ],
       dts: true,
       vueTemplate: true
     }),

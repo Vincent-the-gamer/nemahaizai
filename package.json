@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@iconify-json/heroicons": "^1.1.20",
+    "@iconify-json/logos": "^1.1.42",
     "@iconify-json/material-symbols-light": "^1.1.14",
     "@tauri-apps/cli": "^1.5.11",
     "@types/node": "^20.11.25",

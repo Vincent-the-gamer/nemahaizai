@@ -4,7 +4,7 @@ interface BPMResult {
     bpm: number
 }
 
-const { files, open, reset, onChange } = useFileDialog({
+const { open, reset, onChange } = useFileDialog({
     type: "audio/mpeg"
 })
 
@@ -13,7 +13,7 @@ const resultList = ref<BPMResult[]>([])
 
 const showTag = ref<number>(1)
 
-onChange((files: FileList) => {
+onChange((files: any) => {
    fileList.value = files || []
    resultList.value = []
 })

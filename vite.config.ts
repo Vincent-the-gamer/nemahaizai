@@ -18,13 +18,12 @@ export default defineConfig(async () => ({
         "vue-i18n",
         VueRouterAutoImports,
         {
-          // add any other imports you were relying on
+          // custom imports
           'vue-router/auto': ['useLink'],
+          "@vincent-the-gamer/utils": ["getCurrentPlatform"],
+          "@vincent-the-gamer/utils/client": ["detectBPM"],
+          "@tauri-apps/api/tauri": ["invoke"]
         },
-        {
-          from: "@vincent-the-gamer/utils/client",
-          imports: ["detectBPM"]
-        }
       ],
       dirs: [
         "./src/utils"

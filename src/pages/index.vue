@@ -1,5 +1,37 @@
 <script setup lang="ts">
 
+const platform = getCurrentPlatform()
+
+const paths = reactive({
+    ncmInput: "",
+    mp3Output: ""
+})
+
+onMounted(async () => {
+    switch(platform) {
+        case "windows":
+            paths.ncmInput = "C:/Users/Public/ncm"
+            paths.mp3Output = "C:/Users/Public/mp3"
+            break
+        case "macOS":
+            paths.ncmInput = "/Users/Shared/ncm"
+            paths.mp3Output = "/Users/Shared/ncm"
+            break
+        case "linux":
+            // call Rust function to get current username of user's OS.
+            const username = await invoke("whoami")
+            
+            paths.ncmInput = `/home/${username}/Public/ncm`
+            paths.mp3Output = `/home/${username}/Public/mp3`
+            break
+        default: 
+            break
+    }
+
+
+})
+
+
 </script>
 
 <template>
@@ -9,11 +41,11 @@
         <h4 m-1>{{ $t("description") }}</h4>
         <p m-1>
             <span>{{ $t("ncm-input-folder") }}:</span>
-            <input input/>
+            <input w-fit input type="text" v-model="paths.ncmInput"/>
         </p>
         <p m-1>
             <span>{{ $t("mp3-output-folder") }}:</span>
-            <input input/>
+            <input input type="text" v-model="paths.mp3Output"/>
         </p>
         <p m-1>
             <button button>{{ $t("convert") }}!</button>

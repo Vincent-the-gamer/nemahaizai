@@ -20,17 +20,17 @@
   },
   "devDependencies": {
     "@iconify-json/heroicons": "^1.1.20",
-    "@iconify-json/material-symbols-light": "^1.1.13",
-    "@tauri-apps/cli": "^1.5.10",
-    "@types/node": "^20.11.24",
+    "@iconify-json/material-symbols-light": "^1.1.14",
+    "@tauri-apps/cli": "^1.5.11",
+    "@types/node": "^20.11.25",
     "@vitejs/plugin-vue": "^5.0.4",
     "taze": "^0.13.3",
-    "typescript": "^5.3.3",
+    "typescript": "^5.4.2",
     "unocss": "^0.58.5",
     "unplugin-auto-import": "^0.17.5",
     "unplugin-vue-components": "^0.26.0",
     "unplugin-vue-router": "^0.8.4",
-    "vite": "^5.1.4",
-    "vue-tsc": "^2.0.2"
+    "vite": "^5.1.5",
+    "vue-tsc": "^2.0.6"
   }
 }

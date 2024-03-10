@@ -12,7 +12,7 @@
 # Notice
 1. Under construction.
 2. This repo will be `merged back` to [Nemassler](https://github.com/Vincent-the-gamer/nemassler).
-3. `Merged 「nemassler-rs-core」` at 2024.3.10.
+3. `Merged 「nemassler-rs-core」` on 2024.3.10.
 
 # Build (Avoid forgetting...)
 

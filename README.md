@@ -12,6 +12,7 @@
 # Notice
 1. Under construction.
 2. This repo will be `merged back` to [Nemassler](https://github.com/Vincent-the-gamer/nemassler).
+3. `Merged 「nemassler-rs-core」` at 2024.3.10.
 
 # Build (Avoid forgetting...)
 
@@ -22,3 +23,11 @@ Soon...
 ```shell
 pnpm tauri build
 ```
+
+# Early Preview
+
+## English
+![early-en](./.github/img/early-en.png)
+
+## Simplified Chinese(partially now.)
+![early-cn](./.github/img/early-cn.png)

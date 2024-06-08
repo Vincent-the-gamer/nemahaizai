@@ -14,7 +14,25 @@
 2. This repo will be `merged back` to [Nemassler](https://github.com/Vincent-the-gamer/nemassler).
 3. `Merged 「nemassler-rs-core」` on 2024.3.10.
 
-# Build (Avoid forgetting...)
+# Dev
+## Bump versions of `Cargo.toml`
+
+1. Install `cargo-edit` globally
+
+```shell
+cargo install cargo-edit --features vendored-openssl
+```
+
+2. Run `cargo upgrade`.
+
+```shell
+cargo upgrade
+```
+
+P.S. Check your global cargo packs with `cargo install --list`
+
+
+# Build
 
 ## GitHub Actions
 Soon...

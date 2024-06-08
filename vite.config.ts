@@ -9,6 +9,7 @@ import { VueRouterAutoImports } from 'unplugin-vue-router'
 
 export default defineConfig(async () => ({
   plugins: [
+    VueRouter(),
     vue(),
     UnoCSS(),
     AutoImport({
@@ -34,8 +35,7 @@ export default defineConfig(async () => ({
     Components({
       dts: true,
       include: [/\.vue$/, /\.vue\?vue/]
-    }),
-    VueRouter()
+    })
   ],
   optimizeDeps: {
     include: [

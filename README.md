@@ -9,10 +9,13 @@
   Transform netease <b>.ncm</b> audios into <b>mp3</b> and calculate audio BPM.
 </p>
 
+# Download pre-released build.
+
+[https://github.com/Vincent-the-gamer/nemahaizai/releases/tag/v0.1.0-pre](https://github.com/Vincent-the-gamer/nemahaizai/releases/tag/v0.1.0-pre)
+
 # Notice
-1. Under construction.
-2. This repo will be `merged back` to [Nemassler](https://github.com/Vincent-the-gamer/nemassler).
-3. `Merged 「nemassler-rs-core」` on 2024.3.10.
+1. This repo will be `merged back` to [Nemassler](https://github.com/Vincent-the-gamer/nemassler).
+2. `Merged 「nemassler-rs-core」` on 2024.3.10.
 
 # Dev
 ## Bump versions of `Cargo.toml`

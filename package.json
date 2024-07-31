@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "tauri": "tauri",
-    "dep": "taze major"
+    "dep": "taze major",
+    "clean": "cd src-tauri && cargo clean"
   },
   "dependencies": {
     "@tauri-apps/api": "^1.6.0",

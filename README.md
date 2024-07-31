@@ -38,7 +38,7 @@ P.S. Check your global cargo packs with `cargo install --list`
 # Build
 
 ## GitHub Actions
-Soon...
+Trigger at `release` branch push.
 
 ## Manual Build
 ```shell

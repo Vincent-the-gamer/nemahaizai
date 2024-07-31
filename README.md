@@ -38,7 +38,13 @@ P.S. Check your global cargo packs with `cargo install --list`
 # Build
 
 ## GitHub Actions
-Trigger at `release` branch push.
+Tag required, use
+
+```shell
+git tag vX.X.X
+```
+
+and CI will trigger on `release` branch push.
 
 ## Manual Build
 ```shell

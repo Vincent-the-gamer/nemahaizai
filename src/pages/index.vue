@@ -70,10 +70,9 @@ async function ncm2mp3(){
         </p>
         <p m-1>{{ $t("log") }}: </p>
         <div m-1 w-full h-200px bg-rgba-34-34-34-0.5 border="rd-5px 2px solid yellow" overflow="y-auto x-hidden">
-            <div relative h-full w-full flex="~ col wrap justify-center items-center">
-                <p h-fit font-size-8 v-if="logs.length < 1">{{ $t("nothing") }}</p>
-                <p h-fit font-size-8 v-else>
-                    <p v-for="msg of logs">{{ msg }}</p>
+            <div relative h-full w-full flex="~ col items-center">
+                <p m-0 h-fit font-size-4 v-if="logs.length > 0">
+                    <p m-1 v-for="msg of logs">{{ msg }}</p>
                 </p>
             </div>
         </div>

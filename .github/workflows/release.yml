@@ -75,10 +75,10 @@ jobs:
 
       # package.json里面配置的编译命令
         run: |
-          rustup target add x86_64-apple-darwin
           if [[ ${{ matrix.platform }} == 'macos-latest' ]]; then
-            # macOS Apple Silicon的手动打包, universal通用app打包有问题 
-            pnpm tauri build --target universal-apple-darwin
+            # macOS x86_64的未来不再支持, GitHub Actions流水线已默认使用aarch64环境
+            # 如有需要手动打包, universal通用app打包有问题 
+            pnpm tauri build --target aarch64-apple-darwin
           else
             # 在其他平台上执行构建命令
             pnpm tauri build

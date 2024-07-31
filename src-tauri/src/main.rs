@@ -15,9 +15,8 @@ fn whoami() -> String {
 
 // ncm2mp3
 #[tauri::command]
-fn ncm2mp3(ncm_dir: &str, out_dir: &str) -> String {
-    AudioFile::ncm2mp3(ncm_dir, out_dir);
-    format!("{}", "Convert complete!")
+fn ncm2mp3(ncm_dir: &str, out_dir: &str) -> Vec<String> {
+    AudioFile::ncm2mp3(ncm_dir, out_dir)
 }
 
 fn main() {

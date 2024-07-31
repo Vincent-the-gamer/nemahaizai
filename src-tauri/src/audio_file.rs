@@ -70,7 +70,8 @@ impl<'a> Filter for AudioFile<'a> {
 }
 
 impl<'a> Converter for AudioFile<'a> {
-    fn ncm2mp3(ncm_dir: &str, out_dir: &str) -> () {
+    fn ncm2mp3(ncm_dir: &str, out_dir: &str) -> Vec<String> {
+        let mut results: Vec<String> = vec![];
         Self::ensure_directory_exists(ncm_dir);
         Self::ensure_directory_exists(out_dir);
         Self::filter_by_suffix(ncm_dir, "ncm");
@@ -78,11 +79,14 @@ impl<'a> Converter for AudioFile<'a> {
             for entry in entries {
                 if let Ok(entry) = entry {
                     let path_buf = entry.path();
-                    process_file(path_buf.to_str().unwrap(), out_dir).unwrap();
+                    let result = process_file(path_buf.to_str().unwrap(), out_dir).unwrap();
+                    results.push(result);
                 }
             }
         } else {
             eprintln!("Error converting ncm.");
         }
+        
+        results
     }
 }

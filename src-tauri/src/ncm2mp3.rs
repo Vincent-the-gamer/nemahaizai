@@ -65,7 +65,7 @@ fn decrypt(
 pub fn process_file(
     ncm_dir: &str,
     out_dir: &str
-) -> std::io::Result<()> {
+) -> std::io::Result<String> {
     let mut ncm_dir = ncm_dir;
     if ncm_dir.ends_with("/") {
         ncm_dir = ncm_dir.strip_suffix("/").unwrap();
@@ -135,6 +135,8 @@ pub fn process_file(
     for (k, v) in filter.iter() {
         music_filename = music_filename.replace(k, v);
     }
+
+    let music_filename_clone = music_filename.clone();
 
     println!("{}", music_filename);
 
@@ -252,5 +254,5 @@ pub fn process_file(
                 .expect("error writing flac file:");
         }
     }
-    Ok(())
+    Ok(music_filename_clone)
 }

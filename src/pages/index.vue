@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const { locale } = useI18n()
 
 const platform = getCurrentPlatform()
 
@@ -31,6 +32,12 @@ onMounted(async () => {
     }
 })
 
+const localeMessageMap: Record<string, string> = {
+    "zh_hans_success": "转换成功！",
+    "zh_hans_fail": "转换错误！",
+    "en_success": "Convert successful!",
+    "en_fail": "Convert error!"
+}
 
 // call Rust function to convert .ncm audios to .mp3
 async function ncm2mp3(){
@@ -38,13 +45,17 @@ async function ncm2mp3(){
         alert("paths can't be empty!")
     } else {
         try {
-            await invoke("ncm2mp3", { 
+            const results: string[] = await invoke("ncm2mp3", { 
                 "ncmDir": paths.ncmInput,
                 "outDir": paths.mp3Output
             })
-            logs.value.push("Convert successful!")
+            logs.value = [
+                ...results.map(i => {
+                    return localeMessageMap[`${locale.value}_success`] + `: ${i}`
+                })
+            ]
         } catch(e) {
-            logs.value.push("Convert error!")
+            logs.value.push(localeMessageMap[`${locale.value}_error`])
         }
        
     }

@@ -9,6 +9,9 @@
   Transform netease <b>.ncm</b> audios into <b>mp3</b> and calculate audio BPM.
 </p>
 
+> [!WARNING]
+> This repository has been merged back to [Nemassler](https://github.com/Vincent-the-gamer/nemassler) and now archived. please continue to [Nemassler](https://github.com/Vincent-the-gamer/nemassler).
+
 # Download pre-released build.
 
 [https://github.com/Vincent-the-gamer/nemahaizai/releases/tag/v0.1.0-pre](https://github.com/Vincent-the-gamer/nemahaizai/releases/tag/v0.1.0-pre)
